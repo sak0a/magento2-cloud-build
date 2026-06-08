@@ -31,6 +31,8 @@ The `php85` branch changes the Dockerfile to:
 - Use `composer:2.9`.
 - Skip compiling `opcache`, because Zend OPcache is already provided by the PHP 8.5 base image.
 
+The fork also includes `.github/workflows/build-php85.yml`, which builds the branch Dockerfile and publishes `ghcr.io/sak0a/nginx-php:8.5` with GitHub Actions package-write permissions.
+
 ## Composer installation
 
 Add this repository override to the Magento project's `composer.json`:
